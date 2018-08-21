@@ -1,3 +1,12 @@
+body {
+    background-color: navy;
+    color: white;
+}
+
 #wrapper {
-    
+    text-align: center;
+}
+
+#wrapper2 {
+    text-align: center;
 }
