@@ -1,32 +1,32 @@
 $(document).ready( function(){
-var $rock = $('#rock')
-var $paper = $('#paper')
-var $scissors = $('#scissors')
+var $rock = $('#Rock')
+var $paper = $('#Paper')
+var $scissors = $('#Scissors')
 
 
 $rock.on('click', function(e) {
     var computerChoice = Math.random()
     if (computerChoice < 0.34) {
-        computerChoice = 'rock'
+        computerChoice = 'Rock'
     } else if(computerChoice <= 0.67) {
-        computerChoice = 'paper'
+        computerChoice = 'Paper'
     } else {
-        computerChoice = 'scissors'
+        computerChoice = 'Scissors'
     }
-    $('#userChoice').text('You chose: rock')
+    $('#userChoice').text('You chose: Rock')
     $('#compChoice').text('Computer chose:' + computerChoice)
     
     user = e.target.id
     if (user === computerChoice)
-    return $('#results').text('tie')
+    return $('#results').text('Tie')
 
     switch(user) {
-        case 'rock':
-        return computerChoice === 'paper' ? $('#results').text('lose') : $('#results').text('win')
-        case 'paper':
-        return computerChoice === 'scissors' ? $('#results').text('lose') : $('#results').text('win')
-        case 'scissors':
-        return computerChoice === 'rock' ? $('#results').text('lose') : $('#results').text('win')
+        case 'Rock':
+        return computerChoice === 'Paper' ? $('#results').text('Lose') : $('#results').text('Win')
+        case 'Paper':
+        return computerChoice === 'Scissors' ? $('#results').text('Lose') : $('#results').text('Win')
+        case 'Scissors':
+        return computerChoice === 'Rock' ? $('#results').text('Lose') : $('#results').text('Win')
         default:
         return
     }   
@@ -34,25 +34,25 @@ $rock.on('click', function(e) {
 $paper.on('click', function(e) {
     var computerChoice = Math.random()
     if (computerChoice < 0.34) {
-        computerChoice = 'rock'
+        computerChoice = 'Rock'
     } else if(computerChoice <= 0.67) {
-        computerChoice = 'paper'
+        computerChoice = 'Paper'
     } else {
-        computerChoice = 'scissors'
+        computerChoice = 'Scissors'
     }
-    $('#userChoice').text('You chose: paper')
-    $('#compChoice').text('computer chose:' + computerChoice)
+    $('#userChoice').text('You chose: Paper')
+    $('#compChoice').text('Computer chose:' + computerChoice)
     user = e.target.id
     if (user === computerChoice)
-    return $('#results').text('tie')
+    return $('#results').text('Tie')
 
     switch(user) {
-        case 'rock':
-        return computerChoice === 'paper' ? $('#results').text('lose') : $('#results').text('win')
-        case 'paper':
-        return computerChoice === 'scissors' ? $('#results').text('lose') : $('#results').text('win')
-        case 'scissors':
-        return computerChoice === 'rock' ? $('#results').text('lose') : $('#results').text('win')
+        case 'Rock':
+        return computerChoice === 'Paper' ? $('#results').text('Lose') : $('#results').text('Win')
+        case 'Paper':
+        return computerChoice === 'Scissors' ? $('#results').text('Lose') : $('#results').text('Win')
+        case 'Scissors':
+        return computerChoice === 'Rock' ? $('#results').text('Lose') : $('#results').text('Win')
         default:
         return
     }   
@@ -60,25 +60,25 @@ $paper.on('click', function(e) {
 $scissors.on('click', function(e) {
     var computerChoice = Math.random()
     if (computerChoice < 0.34) {
-        computerChoice = 'rock'
+        computerChoice = 'Rock'
     } else if(computerChoice <= 0.67) {
-        computerChoice = 'paper'
+        computerChoice = 'Paper'
     } else {
-        computerChoice = 'scissors'
+        computerChoice = 'Scissors'
     }
-    $('#userChoice').text('You chose: scissors')
+    $('#userChoice').text('You chose: Scissors')
     $('#compChoice').text('Computer chose:' + computerChoice)
     user = e.target.id
     if (user === computerChoice)
-    return $('#results').text('tie')
+    return $('#results').text('Tie')
 
     switch(user) {
-        case 'rock':
-        return computerChoice === 'paper' ? $('#results').text('lose') : $('#results').text('win')
-        case 'paper':
-        return computerChoice === 'scissors' ? $('#results').text('lose') : $('#results').text('win')
-        case 'scissors':
-        return computerChoice === 'rock' ? $('#results').text('lose') : $('#results').text('win')
+        case 'Rock':
+        return computerChoice === 'Paper' ? $('#results').text('Lose') : $('#results').text('Win')
+        case 'Paper':
+        return computerChoice === 'Scissors' ? $('#results').text('Lose') : $('#results').text('Win')
+        case 'Scissors':
+        return computerChoice === 'Rock' ? $('#results').text('Lose') : $('#results').text('Win')
         default:
         return
     }   
